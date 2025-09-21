@@ -8,7 +8,7 @@
     background-color: #f9fafb;
 }
 
-/* ---------------- Profile Summary ---------------- */
+
 .profile-summary {
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@
     border-color: #94a3b8;
 }
 
-/* ---------------- Account Section ---------------- */
+
 .account-section {
     background-color: #ffffff;
     border-radius: 1rem;
@@ -103,7 +103,7 @@
     color: #111213;
 }
 
-/* ---------------- Booking Section ---------------- */
+
 .booking-section {
     margin-bottom: 2rem;
 }
@@ -121,7 +121,7 @@
     gap: 1.25rem;
 }
 
-/* ---------------- Booking Card ---------------- */
+
 .booking-card {
     background-color: #f1f3f6;
     border-radius: 1rem;
@@ -175,14 +175,14 @@
     margin: 0.25rem 0;
 }
 
-/* ---------------- Error Message ---------------- */
+
 .error {
     color: #ef4444;
     font-weight: 500;
     margin: 1rem 0;
 }
 
-/* ---------------- Responsive Improvements ---------------- */
+
 @media (max-width: 640px) {
     .profile-summary {
         flex-direction: column;
