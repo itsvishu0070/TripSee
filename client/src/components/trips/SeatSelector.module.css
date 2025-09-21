@@ -1,0 +1,86 @@
+
+
+.seatSelector {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.seatGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 0.5rem;
+    justify-items: center;
+    margin-bottom: 1rem;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
+    transition: all 0.2s ease;
+}
+
+.seat:hover {
+    background: #f3f4f6;
+}
+
+.booked {
+    background: #f87171 !important;
+    color: white;
+    cursor: not-allowed;
+}
+
+.selected {
+    background: #2563eb !important;
+    color: white;
+}
+
+.legend {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.legendItem {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.available {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+.booked {
+    background: #f87171;
+}
+
+.selected {
+    background: #2563eb;
+}
+
+.bookedSeatsInfo {
+    font-size: 0.9rem;
+    color: #374151;
+    margin-top: 0.5rem;
+}

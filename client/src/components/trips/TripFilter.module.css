@@ -1,0 +1,83 @@
+
+
+
+.filterCard {
+    background-color: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08), 0 6px 12px rgba(0, 0, 0, 0.04);
+    max-width: 960px;
+    margin: -3rem auto 2rem auto;
+  
+    position: relative;
+    z-index: 20;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filterCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1), 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+
+.filterForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: flex-end;
+}
+
+
+@media (min-width: 768px) {
+    .filterForm {
+        grid-template-columns: 2fr 2fr 1.5fr 1fr;
+    }
+}
+
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.inputGroup input {
+    padding: 0.85rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputGroup input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+
+.searchButton {
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.85rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: fit-content;
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+}
+
+.searchButton:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.4);
+}

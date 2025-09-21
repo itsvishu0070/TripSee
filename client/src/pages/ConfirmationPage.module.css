@@ -1,0 +1,265 @@
+
+
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+    background-color: #f3f4f6;
+    min-height: 80vh;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+    color: #1e293b;
+}
+
+/* ---------------- CONFIRMATION BOX ---------------- */
+.confirmationBox {
+    width: 100%;
+    max-width: 490px;
+   
+    text-align: center;
+    padding: 1.8rem;
+}
+
+/* ---------------- SUCCESS ICON ---------------- */
+.successIcon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 6px 14px rgba(34, 197, 94, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.successIcon:hover {
+    transform: scale(1.05);
+}
+
+/* ---------------- TITLES ---------------- */
+.title {
+    font-size: 1.95rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* ---------------- TICKET CARD ---------------- */
+.ticketCard {
+    background-color: #ffffff;
+    border-radius: 0.6rem;
+    
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.07);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.ticketCard:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------------- TICKET HEADER ---------------- */
+.ticketHeader {
+    padding: 0.85rem 1.25rem;
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.bookingId {
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+}
+
+/* ---------------- TICKET BODY ---------------- */
+.ticketBody {
+    padding: 1.25rem 1.4rem;
+}
+
+
+.routeInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Source & Destination container */
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    min-width: 120px;
+  
+}
+
+.location h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.location p {
+    color: #475569;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.planeIcon {
+    font-size: 1.6rem;
+    color: #9ca3af;
+    flex-shrink: 0;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ---------------- DETAILS GRID ---------------- */
+.detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+    margin-top: 1.2rem;
+    border-top: 1px dashed #cbd5e1;
+    padding-top: 1.2rem;
+}
+
+.detailLabel {
+    font-size: 0.825rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+}
+
+.detailValue {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.price {
+    font-weight: 700;
+    color: #16a34a;
+    font-size: 1.1rem;
+}
+
+/* ---------------- QR CODE SECTION ---------------- */
+.qrCodeSection {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px dashed #cbd5e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.qrCodeImage {
+    background-color: white;
+    padding: 4px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.qrCodeImage:hover {
+    transform: scale(1.03);
+}
+
+.qrCodeText {
+    font-size: 0.825rem;
+    color: #64748b;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.buttonGroup {
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.downloadButton {
+    background: linear-gradient(90deg, #6366f1, #3b82f6);
+    color: white;
+    padding: 0.65rem 1.4rem;
+    border: none;
+    border-radius: 0.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 14px rgba(99, 102, 241, 0.35);
+}
+
+.downloadButton:hover {
+    background: linear-gradient(90deg, #4338ca, #2563eb);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 9px 26px rgba(67, 56, 202, 0.38);
+}
+
+.viewBookingsButton {
+    background-color: white;
+    color: #475569;
+    padding: 0.65rem 1.4rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.viewBookingsButton:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-1px);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 640px) {
+    .confirmationBox {
+        max-width: 90%;
+        padding: 1.2rem;
+    }
+
+    .routeInfo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .location h2 {
+        font-size: 1.8rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .downloadButton,
+    .viewBookingsButton {
+        width: 100%;
+    }
+}

@@ -1,0 +1,292 @@
+/* .navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navLink {
+    color: #334155;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: #3b82f6;
+}
+
+.logoutButton {
+    background-color: transparent;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.logoutButton:hover {
+    background-color: #ef4444;
+    color: white;
+}
+
+
+.navLinkButton {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    color: #334155;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navLinkButton:hover {
+    color: #3b82f6;
+} */
+
+
+
+
+
+/* ---------------- ULTRA-PREMIUM MODERN NAVBAR ---------------- */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+/* Limit container width */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+}
+
+/* ---------------- GOD-TIER ULTRA PREMIUM BRAND ---------------- */
+.brand {
+    font-size: 2.75rem;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: linear-gradient(90deg, #38bdf8, #2563eb, #7c3aed, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+
+    /* Luxurious layered glow */
+    text-shadow:
+        0 0 12px rgba(59, 130, 246, 0.6),
+        0 0 24px rgba(167, 139, 250, 0.5),
+        0 0 36px rgba(236, 72, 153, 0.4);
+
+    /* Elegant idle float */
+    animation: floaty 5s ease-in-out infinite;
+}
+
+/* Animated underline with prism glow */
+.brand::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 4px;
+    border-radius: 3px;
+    transform: translateX(-50%);
+    background: linear-gradient(270deg, #7dd3fc, #3b82f6, #a78bfa, #ec4899, #facc15);
+    background-size: 300% 300%;
+    transition: width 0.7s ease;
+    opacity: 0;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.8);
+    animation: shimmer 3s infinite linear;
+}
+
+/* Hover Luxury Effect */
+.brand:hover {
+    transform: scale(1.15) rotate(-2deg);
+    text-shadow:
+        0 0 25px rgba(56, 189, 248, 0.9),
+        0 0 45px rgba(167, 139, 250, 0.8),
+        0 0 65px rgba(236, 72, 153, 0.7);
+}
+
+.brand:hover::after {
+    width: 130%;
+    opacity: 1;
+}
+
+/* ✨ Shimmer effect along the underline */
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/* 🌊 Gentle floating effect */
+@keyframes floaty {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* Navigation links */
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLink,
+.navLinkButton {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b5563;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navLink::after,
+.navLinkButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #3b82f6;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.navLink:hover::after,
+.navLinkButton:hover::after {
+    width: 100%;
+}
+
+.navLink:hover,
+.navLinkButton:hover {
+    color: #1f2937;
+    background-color: #f3f4f6;
+}
+
+/* Logout / CTA button */
+.logoutButton {
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.55rem 1.4rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.logoutButton::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, transparent 70%);
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.logoutButton:hover::before {
+    opacity: 1;
+}
+
+.logoutButton:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 28px rgba(59, 130, 246, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .navLinks {
+        gap: 1.5rem;
+    }
+
+    .brand {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        gap: 1rem;
+    }
+
+    .brand {
+        font-size: 1.5rem;
+    }
+
+    .navLink,
+    .navLinkButton {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .logoutButton {
+        padding: 0.5rem 1.1rem;
+        font-size: 0.9rem;
+    }
+}
