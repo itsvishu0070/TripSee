@@ -1,11 +1,11 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 
-// Middleware to protect routes that require a user to be logged in
+
 export const protect = async (req, res, next) => {
   let token;
 
-  // Check if the request has an authorization header and if it starts with 'Bearer'
+  
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith("Bearer")
