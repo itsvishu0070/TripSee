@@ -11,7 +11,7 @@
     color: #1e293b;
 }
 
-/* ---------------- CONFIRMATION BOX ---------------- */
+
 .confirmationBox {
     width: 100%;
     max-width: 490px;
@@ -20,7 +20,7 @@
     padding: 1.8rem;
 }
 
-/* ---------------- SUCCESS ICON ---------------- */
+
 .successIcon {
     width: 55px;
     height: 55px;
@@ -41,7 +41,7 @@
     transform: scale(1.05);
 }
 
-/* ---------------- TITLES ---------------- */
+
 .title {
     font-size: 1.95rem;
     font-weight: 700;
@@ -56,7 +56,7 @@
     line-height: 1.5;
 }
 
-/* ---------------- TICKET CARD ---------------- */
+
 .ticketCard {
     background-color: #ffffff;
     border-radius: 0.6rem;
@@ -72,7 +72,7 @@
     box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
 }
 
-/* ---------------- TICKET HEADER ---------------- */
+
 .ticketHeader {
     padding: 0.85rem 1.25rem;
     background: linear-gradient(90deg, #3b82f6, #6366f1);
@@ -89,7 +89,7 @@
     letter-spacing: 0.5px;
 }
 
-/* ---------------- TICKET BODY ---------------- */
+
 .ticketBody {
     padding: 1.25rem 1.4rem;
 }
@@ -104,7 +104,7 @@
     margin-bottom: 1.5rem;
 }
 
-/* Source & Destination container */
+
 .location {
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@
     align-items: center;
     justify-content: center;
 }
-/* ---------------- DETAILS GRID ---------------- */
+
 .detailsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -166,7 +166,7 @@
     font-size: 1.1rem;
 }
 
-/* ---------------- QR CODE SECTION ---------------- */
+
 .qrCodeSection {
     margin-top: 1.25rem;
     padding-top: 1.25rem;
@@ -194,7 +194,7 @@
     color: #64748b;
 }
 
-/* ---------------- BUTTONS ---------------- */
+
 .buttonGroup {
     margin-top: 1.8rem;
     display: flex;
@@ -238,7 +238,7 @@
     transform: translateY(-1px);
 }
 
-/* ---------------- RESPONSIVE ---------------- */
+
 @media (max-width: 640px) {
     .confirmationBox {
         max-width: 90%;
