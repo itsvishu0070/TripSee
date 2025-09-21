@@ -34,8 +34,6 @@ const MyBookingsPage = () => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  // --- THE FIX IS HERE ---
-  // We add 'b.trip &&' to ensure we only process bookings with a valid trip.
   const upcomingBookings = bookings.filter(
     (b) => b.trip && new Date(b.trip.date) >= today
   );
@@ -89,11 +87,11 @@ const MyBookingsPage = () => {
   );
 };
 
-// This helper component now gracefully handles deleted trips
+
 const BookingCard = ({ booking }) => {
   const isUpcoming = booking.trip && new Date(booking.trip.date) >= new Date();
 
-  // --- AND THE FIX IS HERE ---
+ 
   if (!booking.trip) {
     return (
       <div className={`${styles.card} ${styles.invalidCard}`}>
