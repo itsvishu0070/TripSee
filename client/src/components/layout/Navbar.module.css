@@ -1,82 +1,4 @@
-/* .navbar {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 50;
-}
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.brand {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: #3b82f6;
-    text-decoration: none;
-}
-
-.navLinks {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.navLink {
-    color: #334155;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.navLink:hover {
-    color: #3b82f6;
-}
-
-.logoutButton {
-    background-color: transparent;
-    border: 1px solid #ef4444;
-    color: #ef4444;
-    padding: 0.5rem 1rem;
-    border-radius: 0.375rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.logoutButton:hover {
-    background-color: #ef4444;
-    color: white;
-}
-
-
-.navLinkButton {
-    background: none;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    color: #334155;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.navLinkButton:hover {
-    color: #3b82f6;
-} */
-
-
-
-
-
-/* ---------------- ULTRA-PREMIUM MODERN NAVBAR ---------------- */
 .navbar {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e7eb;
@@ -90,7 +12,7 @@
     justify-content: center;
 }
 
-/* Limit container width */
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -99,7 +21,7 @@
     max-width: 1300px;
 }
 
-/* ---------------- GOD-TIER ULTRA PREMIUM BRAND ---------------- */
+
 .brand {
     font-size: 2.75rem;
     font-weight: 900;
@@ -113,17 +35,17 @@
     -webkit-text-fill-color: transparent;
     transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 
-    /* Luxurious layered glow */
+ 
     text-shadow:
         0 0 12px rgba(59, 130, 246, 0.6),
         0 0 24px rgba(167, 139, 250, 0.5),
         0 0 36px rgba(236, 72, 153, 0.4);
 
-    /* Elegant idle float */
+  
     animation: floaty 5s ease-in-out infinite;
 }
 
-/* Animated underline with prism glow */
+
 .brand::after {
     content: "";
     position: absolute;
@@ -141,7 +63,7 @@
     animation: shimmer 3s infinite linear;
 }
 
-/* Hover Luxury Effect */
+
 .brand:hover {
     transform: scale(1.15) rotate(-2deg);
     text-shadow:
@@ -155,7 +77,6 @@
     opacity: 1;
 }
 
-/* ✨ Shimmer effect along the underline */
 @keyframes shimmer {
     0% {
         background-position: 0% 50%;
@@ -166,7 +87,7 @@
     }
 }
 
-/* 🌊 Gentle floating effect */
+
 @keyframes floaty {
 
     0%,
@@ -178,7 +99,7 @@
         transform: translateY(-10px);
     }
 }
-/* Navigation links */
+
 .navLinks {
     display: flex;
     align-items: center;
@@ -222,7 +143,6 @@
     background-color: #f3f4f6;
 }
 
-/* Logout / CTA button */
 .logoutButton {
     background-color: #3b82f6;
     color: #ffffff;
@@ -259,7 +179,7 @@
     box-shadow: 0 10px 28px rgba(59, 130, 246, 0.4);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1024px) {
     .navLinks {
         gap: 1.5rem;
