@@ -48,16 +48,15 @@ export const registerUser = async (req, res) => {
   }
 };
 
-// @desc    Authenticate user & get token
-// @route   POST /api/auth/login
+
 export const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    // 1. Check if user exists
+    
     const user = await User.findOne({ email });
 
-    // 2. If user exists, compare the entered password with the hashed password in the DB
+   
     if (user && (await bcrypt.compare(password, user.password))) {
       res.json({
         _id: user._id,
