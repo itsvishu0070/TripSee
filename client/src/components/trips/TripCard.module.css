@@ -84,7 +84,7 @@
     box-shadow: 0 6px 18px rgba(67, 56, 202, 0.4);
 }
 
-/* ---------------- RESPONSIVE ---------------- */
+
 @media (max-width: 640px) {
     .cardImage {
         height: 12rem;
